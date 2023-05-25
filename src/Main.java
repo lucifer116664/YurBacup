@@ -31,7 +31,7 @@ public class Main {
         frame.setContentPane(mainPanel);
 
         Toolkit toolkit = Toolkit.getDefaultToolkit();
-        frame.setBounds(toolkit.getScreenSize().width / 2 - 300, toolkit.getScreenSize().height / 2 - 200, 600, 400);
+        frame.setBounds(toolkit.getScreenSize().width / 2 - 325, toolkit.getScreenSize().height / 2 - 200, 650, 400);
     }
 
     public static void main(String[] args) {

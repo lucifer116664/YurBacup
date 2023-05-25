@@ -42,7 +42,7 @@
         </constraints>
         <properties>
           <font size="16"/>
-          <text value="This program was developed to backup your files an keep them safe."/>
+          <text value="This program was developed to backup your files and keep them safe."/>
         </properties>
       </component>
       <component id="f12ba" class="javax.swing.JRadioButton" binding="backupSystematicallyRadioButton" default-binding="true">
