@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e3f9895-4a15-40c0-a7f2-4b9dda3f2cfb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YurBackup.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YurBackup.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Now.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Now.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Now.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Now.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Systematically.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Systematically.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Systematically.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Systematically.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

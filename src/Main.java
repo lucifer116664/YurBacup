@@ -1,12 +1,19 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * <code>Main</code> class enables user to choose what to do next
+ * @author lucifer116664
+ */
 public class Main {
     private JFrame frame;
     private JPanel mainPanel;
     private JRadioButton backupNowRadioButton, backupSystematicallyRadioButton;
     private JButton nextButton;
 
+    /**
+     * Creates <code>ButtonGroup</code> for <code>JRadioButton</code> elements and adds action listener
+     */
     public Main() {
         ButtonGroup btnGroup = new ButtonGroup();
         btnGroup.add(backupNowRadioButton);
@@ -24,6 +31,9 @@ public class Main {
         });
     }
 
+    /**
+     * Creates and makes visible the frame
+     */
     public void openFrame() {
         frame = new JFrame("YurBackup");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

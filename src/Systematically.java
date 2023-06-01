@@ -6,6 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
+/**
+ * <code>Systematically</code> class enables user to back up data every specified interval
+ * @author lucifer116664
+ */
 public class Systematically {
     JFrame frame;
     private JPanel mainPanel;
@@ -14,6 +18,9 @@ public class Systematically {
     private JSpinner timeSpinner, unitsOfTimeSpinner;
     private File srcFileOrDir, destDir;
 
+    /**
+     * Initializes <code>JSpinner</code> elements and adds action listeners
+     */
     public Systematically() {
         String[] unitsOfTimeStrings = {"second(s)", "minute(s)", "hour(s)", "day(s)", "week(s)", "month(s)"};
 
@@ -29,6 +36,9 @@ public class Systematically {
         });
     }
 
+    /**
+     * Enables user to choose the backup data
+     */
     private void chooseData() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
@@ -39,6 +49,9 @@ public class Systematically {
         }
     }
 
+    /**
+     * Enables user to choose output location
+     */
     private void chooseOutputLocation() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -49,6 +62,9 @@ public class Systematically {
         }
     }
 
+    /**
+     * Starts new thread
+     */
     private void backupSystematicallyAction() {
         if (dataChosenCheckBox.isSelected() & outChosenCheckBox.isSelected()) {
             Thread thread = new Thread(new repeatSystematically());
@@ -65,6 +81,9 @@ public class Systematically {
 
     }
 
+    /**
+     * Runs <code>backup</code> method every specified interval
+     */
     private class repeatSystematically implements Runnable {
         @Override
         public void run() {
@@ -89,6 +108,9 @@ public class Systematically {
         }
     }
 
+    /**
+     * Copies selected data to selected location
+     */
     private void backup(){
         try {
             final Path dest = destDir.toPath().resolve(srcFileOrDir.toPath().getFileName());
@@ -112,6 +134,9 @@ public class Systematically {
         }
     }
 
+    /**
+     * Creates and makes visible the frame
+     */
     public void openFrame() {
         frame = new JFrame("YurBackup");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

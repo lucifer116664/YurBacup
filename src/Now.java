@@ -6,6 +6,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
+/**
+ * <code>Now</code> class enables user to back up once right now
+ * @author lucifer116664
+ */
 public class Now {
     JFrame frame;
     private JPanel mainPanel;
@@ -13,6 +17,9 @@ public class Now {
     private JCheckBox outChosenCheckBox, dataChosenCheckBox;
     private File srcFileOrDir, destDir;
 
+    /**
+     * Adds action listeners
+     */
     public Now() {
         chooseDataToBackupButton.addActionListener(e -> chooseData());
         chooseOutputLocationButton.addActionListener(e -> chooseOutputLocation());
@@ -23,6 +30,9 @@ public class Now {
         });
     }
 
+    /**
+     * Enables user to choose the backup data
+     */
     private void chooseData() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
@@ -33,6 +43,9 @@ public class Now {
         }
     }
 
+    /**
+     * Enables user to choose output location
+     */
     private void chooseOutputLocation() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
@@ -43,6 +56,9 @@ public class Now {
         }
     }
 
+    /**
+     * Copies selected data to selected location
+     */
     private void backup(){
         if (dataChosenCheckBox.isSelected() & outChosenCheckBox.isSelected()) {
             try {
@@ -72,6 +88,9 @@ public class Now {
         }
     }
 
+    /**
+     * Creates and makes visible the frame
+     */
     public void openFrame() {
         frame = new JFrame("YurBackup");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
